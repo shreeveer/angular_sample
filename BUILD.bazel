@@ -1,0 +1,13 @@
+load("@angular//:build_rules.bzl", "ng_package")
+
+ng_package(
+    name = "app",
+    srcs = glob(["src/**/*.ts"]),
+    deps = [
+        "@angular//core",
+        "@angular//common",
+        "@angular//compiler",
+        "@angular//platform-browser",
+        "@angular//platform-browser-dynamic",
+    ],
+)
